@@ -3,6 +3,8 @@ services:
     name: abota-api
     runtime: python
     rootDir: backend
+    region: frankfurt
+    plan: free
     buildCommand: pip install -r requirements.txt
     preDeployCommand: alembic upgrade head
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
@@ -14,7 +16,15 @@ services:
           property: connectionString
       - key: CORS_ORIGINS
         sync: false
+  - type: web
+    name: abota-pwa
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
 databases:
   - name: abota-postgres
     databaseName: abota
     user: abota
+    region: frankfurt
+    plan: free
