@@ -1,0 +1,14 @@
+{
+  "id": "/",
+  "name": "ABOTA Digital",
+  "short_name": "ABOTA",
+  "description": "A tua abota, organizada num só lugar.",
+  "lang": "pt-PT",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F5F7F6",
+  "theme_color": "#153B32",
+  "orientation": "portrait-primary",
+  "icons": [{ "src": "/abota-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

@@ -1,0 +1,10 @@
+node_modules/
+frontend/dist/
+frontend/android/
+backend/.venv/
+backend/__pycache__/
+backend/**/*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store

@@ -1,0 +1,11 @@
+{
+  "name": "abota-digital",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "pnpm --dir frontend dev",
+    "build": "pnpm --dir frontend build",
+    "android:sync": "pnpm --dir frontend android:sync",
+    "android:open": "pnpm --dir frontend android:open"
+  }
+}
