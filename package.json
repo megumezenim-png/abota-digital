@@ -6,6 +6,8 @@
     "dev": "pnpm --dir frontend dev",
     "build": "pnpm --dir frontend build",
     "android:sync": "pnpm --dir frontend android:sync",
-    "android:open": "pnpm --dir frontend android:open"
+    "android:open": "pnpm --dir frontend android:open",
+    "android:apk": "bash scripts/build-android-apk.sh",
+    "check:production": "bash scripts/check-production.sh"
   }
 }
